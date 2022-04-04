@@ -138,4 +138,8 @@ const reset = () => {
     right__tip_amount.innerHTML = '$'+'0.00' 
     right__total_amount.innerHTML = '$'+'0.00'  
     changeInputToButton()
+    totalPeoples.value = ''
+    billAmount.value = ''
+
+
 }
