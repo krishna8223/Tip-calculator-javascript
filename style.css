@@ -199,6 +199,7 @@ main {
 }
 
 .left__message {
+  font-size: 1.3rem;
   position: absolute;
   top: -47%;
   color: red;
@@ -244,17 +245,17 @@ main {
   color: white;
 }
 
-.tip-amount h1 {
-  font-size: 30px;
-  color: #26c0ab;
-}
-
 .tip-amount h2 {
   font-size: 1.8rem;
 }
 
 .tip-amount p {
   color: #7f9c9f;
+}
+
+.tip-amount > p {
+  font-size: 30px;
+  color: #26c0ab;
 }
 
 .right_total_amount {

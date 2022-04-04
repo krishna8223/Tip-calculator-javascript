@@ -10,8 +10,8 @@ const totalPeoples        =   document.getElementsByClassName('left__total_peopl
 const custom_button       =   document.getElementsByClassName('left__button_custom')[0]
 const custom_input        =   document.getElementsByClassName('left__custom_input')[0]
 const message             =   [...document.getElementsByClassName('left__message')]
-const right__tip_amount   =   document.querySelector('.right__tip_amount h1')
-const right__total_amount =   document.querySelector('.right_total_amount h1')
+const right__tip_amount   =   document.querySelector('.right__tip_amount > p')
+const right__total_amount =   document.querySelector('.right_total_amount > p')
 
 
 // For animation.

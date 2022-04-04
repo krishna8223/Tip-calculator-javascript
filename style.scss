@@ -151,6 +151,7 @@ main{
 }
 
 .left__message{
+    font-size: 1.3rem;
     position: absolute;
     top: -47%;
     color: red;
@@ -174,10 +175,6 @@ main{
     color: white;
 }
 
-.tip-amount h1{
-    font-size: 30px;
-    color: $primary-color;
-}
 
 .tip-amount h2 {
     font-size: 1.8rem;
@@ -185,6 +182,10 @@ main{
 
 .tip-amount p {
     color:hsl(184, 14%, 56%) ;
+}
+.tip-amount > p{
+    font-size: 30px;
+    color: $primary-color ;
 }
 .right_total_amount{
     margin-top: 4rem;
