@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+      <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+      
+      <title>Frontend Mentor | Tip calculator app</title>
+      <Link rel="stylesheet" href="style.css">
+
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <h1 class="heading">SPLI<br>TTER</h1> 
+
+  <!-- Main calculator ................................. -->
+
+  <section class="calculator">
+
+    <!-- Left side of calculator  ................................. -->
+    <div class="left">
+      <div class="left_bill">
+        <h2 class="left__bill-heading left__heading" >Bill</h2>
+        <div class="left__input__image">
+          <h2 class="left__message"></h2>
+          <img class="left__dollar_image" src="./images/icon-dollar.svg" alt="">
+          <input class="left__input left__bill_input" type="number">
+        </div>
+      </div>
+
+      <div class="left__select-tip">
+        <h2 class="left__select-tip-heading left__heading" >Select Tip</h2>
+        <div class="left__percentage-buttons">
+          <button class="left__button">5%</button>
+          <button class="left__button">10%</button>
+          <button class="left__button">15%</button>
+          <button class="left__button">25%</button>
+          <button class="left__button">50%</button>
+          <button class="left__button left__button_custom">Custom</button>
+          <input  type="number" class="left__custom_input">
+        </div>
+      </div>
+
+      <div class="left__no-of-people">
+        <h2 class="left__select-tip-heading left__heading" >NUmber of people</h2>
+        <div class="left__input__image">
+          <h2 class="left__message"></h2>
+          <img class="left__person_image" src="./images/icon-person.svg" alt="">
+          <input  class="left__input left__total_peoples_input" type="number">
+        </div>
+      </div>
+    </div>
+
+    <!-- Right side of calculator  ................................. -->
+    
+    <div class="right">
+      <div class="right__tip_amount tip-amount">
+        <div class="tip_amount__amount">
+          <h3>Tip Amount</h3>
+          <p>/person</p>
+        </div>
+        <h1>$00.00</h1>
+      </div>
+
+      <div class="right_total_amount tip-amount">
+        <div class="tip_amount__person">
+          <h3>Total</h3>
+          <p>/person</p>
+        </div>
+        <h1>$00.00</h1>
+      </div>
+      
+      <button onclick="reset()" class="right__reset_button">
+        RESET
+      </button>
+      </div>
+    </div>
+    
+  </section>
+
+  <!-- Attribution ................................. -->
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a target="_blank" href="https://github.com/krishna8223">Krishna verma</a>.
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

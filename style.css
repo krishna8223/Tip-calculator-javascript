@@ -1,0 +1,323 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Space Mono', monospace;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: #c5e4e7;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.heading {
+  color: #00494d;
+  margin-bottom: 50px;
+  color: #00494d;
+  letter-spacing: 8px;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.calculator {
+  max-width: 820px;
+  width: 70vw;
+  height: 365px;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+@-webkit-keyframes fade {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  100% {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.left {
+  width: 50%;
+  height: 100%;
+}
+
+.left__select-tip {
+  margin: 2rem 0;
+}
+
+.left__heading {
+  color: #5e7a7d;
+}
+
+.left__percentage-buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.left__no-of-people {
+  width: 100%;
+}
+
+.left__button, .left__custom_input {
+  height: 5.7rem;
+  width: 30%;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #00494d;
+  border: none;
+  font-size: 2rem;
+  color: white;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+.left__button:hover, .left__custom_input:hover {
+  background-color: #26c0ab;
+}
+
+.left__button--secondary {
+  background-color: #26c0ab;
+}
+
+.left__custom_input {
+  text-align: end;
+  padding: 10px;
+  color: black;
+  display: none;
+  background-color: white;
+  border: 1px solid black;
+}
+
+.left__custom_input:hover {
+  background-color: #fff;
+}
+
+.left__input__image {
+  position: relative;
+}
+
+.left__dollar_image, .left__person_image {
+  position: absolute;
+  left: 10px;
+  top: 50%;
+  -webkit-transform: translate(0%, -40%);
+          transform: translate(0%, -40%);
+}
+
+.left__input {
+  padding: 20px 20px 20px 30px;
+  width: 100%;
+  height: 33px;
+  border: none;
+  background-color: #f4fafa;
+  margin-top: .3rem;
+}
+
+.left__message {
+  position: absolute;
+  top: -47%;
+  color: red;
+  right: 0;
+}
+
+.right {
+  width: 50%;
+  height: 100%;
+  min-width: 257px;
+  background-color: #00494d;
+  border-radius: 2rem;
+  padding: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+.tip-amount {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: white;
+}
+
+.tip-amount h1 {
+  font-size: 30px;
+  color: #26c0ab;
+}
+
+.tip-amount h3 {
+  font-size: 1.8rem;
+}
+
+.tip-amount p {
+  color: #7f9c9f;
+}
+
+.right_total_amount {
+  margin-top: 4rem;
+}
+
+.right__reset_button {
+  cursor: pointer;
+  background-color: #26c0ab;
+  margin-top: 5rem;
+  width: 90%;
+  font-size: 2rem;
+  height: 4.5rem;
+  border: none;
+  border-radius: 5px;
+  margin: 10rem auto 0 auto;
+  color: #00494d;
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.right__reset_button:hover {
+  background-color: #c5e4e7;
+}
+
+.attribution {
+  margin-top: 30px;
+  font-size: 1.8rem;
+  text-align: center;
+  -webkit-transform: translateY(50px);
+          transform: translateY(50px);
+  opacity: 0;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.attribution a {
+  color: #3e52a3;
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: #26c0ab;
+}
+
+@media (max-width: 1150px) {
+  html {
+    font-size: 55%;
+  }
+  body {
+    overflow-y: auto;
+    height: auto;
+  }
+  .calculator {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: auto;
+    width: 41vw;
+    min-width: 340px;
+    min-height: unset;
+  }
+  .left {
+    width: 100%;
+  }
+  .left__button, .left__custom_input {
+    width: 30%;
+  }
+  .right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  html {
+    font-size: 50%;
+  }
+  .heading {
+    margin-top: 30px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
