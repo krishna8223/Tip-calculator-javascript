@@ -30,6 +30,22 @@ body {
           align-items: center;
 }
 
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .heading {
   color: #00494d;
   margin-bottom: 50px;
@@ -96,6 +112,7 @@ body {
 }
 
 .left__heading {
+  font-size: 1.3rem;
   color: #5e7a7d;
 }
 
@@ -232,7 +249,7 @@ body {
   color: #26c0ab;
 }
 
-.tip-amount h3 {
+.tip-amount h2 {
   font-size: 1.8rem;
 }
 
@@ -310,14 +327,14 @@ body {
   .right {
     width: 100%;
   }
+  .heading {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 550px) {
   html {
     font-size: 50%;
-  }
-  .heading {
-    margin-top: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
